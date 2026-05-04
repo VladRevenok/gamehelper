@@ -1,0 +1,259 @@
+.games-main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  width: 100%;
+}
+
+/* Header */
+.games-header {
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.7s ease;
+}
+
+.games-badge {
+  display: inline-block;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: var(--accent-2);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 50px;
+  padding: 0.4rem 1.2rem;
+  margin-bottom: 1rem;
+  background: rgba(0, 212, 255, 0.05);
+  text-transform: uppercase;
+}
+
+.games-title {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.grad-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.games-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.7s 0.1s ease both;
+}
+
+.filter-btn {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--accent);
+  color: var(--text-primary);
+  background: rgba(108, 71, 255, 0.15);
+  box-shadow: 0 0 12px var(--glow);
+}
+
+/* ===================== GAMES GRID ===================== */
+.games-grid {
+  display: grid;
+  /* Desktop: 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  animation: fadeInUp 0.7s 0.2s ease both;
+}
+
+/* ===================== GAME CARD ===================== */
+.game-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(108, 71, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 0 30px var(--glow), 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.game-card.hidden {
+  display: none;
+}
+
+.game-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: rgba(108, 71, 255, 0.08);
+}
+
+/* When using real images */
+.game-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.game-card:hover .game-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* Placeholder (remove when adding real images) */
+.game-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background: linear-gradient(135deg, rgba(108,71,255,0.1), rgba(0,212,255,0.05));
+  transition: transform 0.4s ease;
+}
+
+.game-card:hover .game-img-placeholder {
+  transform: scale(1.08);
+}
+
+/* Overlay on hover */
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.game-find-btn {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.65rem 1.4rem;
+  background: linear-gradient(135deg, var(--accent), #5035cc);
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px var(--glow);
+  transition: transform 0.2s;
+}
+
+.game-find-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Card info */
+.game-info {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.game-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.game-tags-row {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.gtag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  border: 1px solid rgba(108, 71, 255, 0.25);
+  color: var(--text-secondary);
+  background: rgba(108, 71, 255, 0.05);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* CTA */
+.games-cta {
+  text-align: center;
+  margin-top: 3.5rem;
+  padding: 2.5rem;
+  background: rgba(108, 71, 255, 0.04);
+  border: 1px solid rgba(108, 71, 255, 0.15);
+  border-radius: 20px;
+  animation: fadeInUp 0.7s 0.4s ease both;
+}
+
+.games-cta p {
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 560px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .games-main {
+    padding: 2rem 1.2rem 3rem;
+  }
+
+  .game-img-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .game-img-placeholder {
+    font-size: 3.5rem;
+  }
+}

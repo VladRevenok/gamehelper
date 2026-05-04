@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHelper — All Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="all-games.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html" class="logo">GameHelper</a>
+  <div class="nav-tabs">
+    <a href="about.html" class="nav-tab"><span>About us</span></a>
+    <a href="index.html" class="nav-tab"><span>Find Game</span></a>
+    <a href="all-games.html" class="nav-tab active"><span>All Games</span></a>
+  </div>
+</nav>
+
+<div class="page">
+  <main class="games-main">
+
+    <!-- Header -->
+    <div class="games-header">
+      <div class="games-badge">Full Collection</div>
+      <h1 class="games-title">All <span class="grad-text">Games</span></h1>
+      <p class="games-subtitle">Every title in our recommendation database</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="action">Action</button>
+      <button class="filter-btn" data-filter="story">Story</button>
+      <button class="filter-btn" data-filter="multiplayer">Multiplayer</button>
+      <button class="filter-btn" data-filter="openworld">Open World</button>
+    </div>
+
+    <!-- Games grid -->
+    <div class="games-grid" id="gamesGrid">
+
+      <div class="game-card" data-tags="action combat fantasy story graphics long">
+        <div class="game-img-wrap">
+          <!-- Replace src with actual image: <img src="images/gow.jpg" alt="God of War Ragnarök"> -->
+          <div class="game-img-placeholder">⚡</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">God of War Ragnarök</div>
+          <div class="game-tags-row">
+            <span class="gtag">Action RPG</span>
+            <span class="gtag">PS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="story adventure postapoc survival graphics long">
+        <div class="game-img-wrap">
+          <!-- Replace src with actual image: <img src="images/tlou.jpg" alt="The Last of Us"> -->
+          <div class="game-img-placeholder">🌿</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">The Last of Us</div>
+          <div class="game-tags-row">
+            <span class="gtag">Adventure</span>
+            <span class="gtag">PS / PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="story openworld graphics long adventure realistic">
+        <div class="game-img-wrap">
+          <!-- Replace: <img src="images/rdr2.jpg" alt="Red Dead Redemption 2"> -->
+          <div class="game-img-placeholder">🤠</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Red Dead Redemption 2</div>
+          <div class="game-tags-row">
+            <span class="gtag">Open World</span>
+            <span class="gtag">PS / Xbox / PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="competitive multiplayer modern action medium realistic">
+        <div class="game-img-wrap">
+          <!-- Replace: <img src="images/cs2.jpg" alt="Counter-Strike 2"> -->
+          <div class="game-img-placeholder">🎯</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Counter-Strike 2</div>
+          <div class="game-tags-row">
+            <span class="gtag">FPS</span>
+            <span class="gtag">PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="multiplayer competitive action casual medium">
+        <div class="game-img-wrap">
+          <!-- Replace: <img src="images/fortnite.jpg" alt="Fortnite"> -->
+          <div class="game-img-placeholder">🏗️</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Fortnite</div>
+          <div class="game-tags-row">
+            <span class="gtag">Battle Royale</span>
+            <span class="gtag">All Platforms</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="action combat fantasy graphics story long">
+        <div class="game-img-wrap">
+          <!-- Replace: <img src="images/wukong.jpg" alt="Black Myth: Wukong"> -->
+          <div class="game-img-placeholder">🐒</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Black Myth: Wukong</div>
+          <div class="game-tags-row">
+            <span class="gtag">Action RPG</span>
+            <span class="gtag">PS / PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="story adventure openworld graphics long fantasy">
+        <div class="game-img-wrap">
+          <div class="game-img-placeholder">🧙</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">The Witcher 3</div>
+          <div class="game-tags-row">
+            <span class="gtag">RPG</span>
+            <span class="gtag">All Platforms</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="openworld story adventure graphics long realistic">
+        <div class="game-img-wrap">
+          <div class="game-img-placeholder">🏙️</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Cyberpunk 2077</div>
+          <div class="game-tags-row">
+            <span class="gtag">Open World RPG</span>
+            <span class="gtag">PS / PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card" data-tags="action combat openworld story long fantasy">
+        <div class="game-img-wrap">
+          <div class="game-img-placeholder">🏹</div>
+          <div class="game-overlay">
+            <a href="index.html" class="game-find-btn">Find Similar</a>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Elden Ring</div>
+          <div class="game-tags-row">
+            <span class="gtag">Souls-like</span>
+            <span class="gtag">All Platforms</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="games-cta">
+      <p>Not sure which game is right for you?</p>
+      <a href="index.html" class="btn-primary" style="display:inline-block; text-decoration:none; font-size:0.9rem; padding:0.9rem 2.5rem;">
+        ⚡ Find My Game
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-section">
+      <h3>GameHelper</h3>
+      <p>The site is designed to help users choose video games based on their interests. The user chooses the genre, game format, and their preferences, and the site offers suitable options.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Social media</h3>
+      <a href="#">Instagram</a>
+      <a href="#">FaceBook</a>
+      <a href="#">Twitter</a>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Vlad Revenok</p>
+      <p>0951275524</p>
+      <a href="mailto:revenokvlad@gmail.com">revenokvlad@gmail.com</a>
+    </div>
+    <div class="footer-bottom">© 2026 GameHelper. All rights reserved</div>
+  </footer>
+</div>
+
+<script src="all-games.js"></script>
+</body>
+</html>
