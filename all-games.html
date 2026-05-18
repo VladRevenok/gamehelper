@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHelper — All Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="all-games.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">GameHelper</a>
+  <div class="nav-tabs">
+    <a href="about.html" class="nav-tab"><span>About us</span></a>
+    <a href="index.html" class="nav-tab"><span>Find Game</span></a>
+    <a href="all-games.html" class="nav-tab active"><span>All Games</span></a>
+  </div>
+</nav>
+
+<div class="page">
+  <main class="games-main">
+
+    <div class="games-header">
+      <div class="games-badge">Full Collection</div>
+      <h1 class="games-title">All <span class="grad-text">Games</span></h1>
+      <p class="games-subtitle">Every title in our recommendation database</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="action">Action</button>
+      <button class="filter-btn" data-filter="story">Story</button>
+      <button class="filter-btn" data-filter="multiplayer">Multiplayer</button>
+      <button class="filter-btn" data-filter="openworld">Open World</button>
+    </div>
+
+    <div class="games-grid" id="gamesGrid">
+
+      <!-- GOD OF WAR -->
+      <div class="game-card" data-tags="action combat fantasy story graphics long">
+        <div class="game-img-wrap">
+          <img src="images/God_of_War_Ragnarök_cover.jpg" alt="God of War Ragnarök" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">⚡</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">God of War Ragnarök</div>
+          <div class="game-tags-row"><span class="gtag">Action RPG</span><span class="gtag">PS</span></div>
+        </div>
+      </div>
+
+      <!-- THE LAST OF US -->
+      <div class="game-card" data-tags="story adventure postapoc survival graphics long">
+        <div class="game-img-wrap">
+          <img src="images/TheLastOfUs.jpg" alt="The Last of Us" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🌿</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">The Last of Us</div>
+          <div class="game-tags-row"><span class="gtag">Adventure</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- RED DEAD REDEMPTION 2 -->
+      <div class="game-card" data-tags="story openworld graphics long adventure realistic">
+        <div class="game-img-wrap">
+          <img src="images/250px-Обкладинка_відеогри_Red_Dead_Redemption_2.jpg" alt="Red Dead Redemption 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🤠</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Red Dead Redemption 2</div>
+          <div class="game-tags-row"><span class="gtag">Open World</span><span class="gtag">PS / Xbox / PC</span></div>
+        </div>
+      </div>
+
+      <!-- COUNTER-STRIKE 2 -->
+      <div class="game-card" data-tags="competitive multiplayer modern action medium realistic">
+        <div class="game-img-wrap">
+          <img src="images/CounterStrike2.jpg" alt="Counter-Strike 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🎯</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Counter-Strike 2</div>
+          <div class="game-tags-row"><span class="gtag">FPS</span><span class="gtag">PC</span></div>
+        </div>
+      </div>
+
+      <!-- FORTNITE -->
+      <div class="game-card" data-tags="multiplayer competitive action casual medium">
+        <div class="game-img-wrap">
+          <img src="images/Fortnite_F_lettermark_logo.png" alt="Fortnite" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🏗️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Fortnite</div>
+          <div class="game-tags-row"><span class="gtag">Battle Royale</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- BLACK MYTH WUKONG -->
+      <div class="game-card" data-tags="action combat fantasy graphics story long">
+        <div class="game-img-wrap">
+          <img src="images/Black_Myth_Wukong_cover_art.jpg" alt="Black Myth: Wukong" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🐒</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Black Myth: Wukong</div>
+          <div class="game-tags-row"><span class="gtag">Action RPG</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- THE WITCHER 3 -->
+      <div class="game-card" data-tags="story openworld fantasy graphics long adventure">
+        <div class="game-img-wrap">
+          <img src="images/250px-Обкладинка_відеогри_The_Witcher_3_Wild_Hunt.jpg" alt="The Witcher 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🧙</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">The Witcher 3</div>
+          <div class="game-tags-row"><span class="gtag">RPG</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- CYBERPUNK 2077 -->
+      <div class="game-card" data-tags="openworld story adventure graphics long realistic">
+        <div class="game-img-wrap">
+          <img src="images/250px-Cyberpunk_2077_poster.jpg" alt="Cyberpunk 2077" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🏙️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Cyberpunk 2077</div>
+          <div class="game-tags-row"><span class="gtag">Open World RPG</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- ELDEN RING -->
+      <div class="game-card" data-tags="action combat openworld story long fantasy">
+        <div class="game-img-wrap">
+          <img src="images/Elden_Ring_poster.jpg" alt="Elden Ring" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🏹</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Elden Ring</div>
+          <div class="game-tags-row"><span class="gtag">Souls-like</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- MINECRAFT -->
+      <div class="game-card" data-tags="openworld action multiplayer casual long adventure">
+        <div class="game-img-wrap">
+          <img src="images/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg" alt="Minecraft" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">⛏️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Minecraft</div>
+          <div class="game-tags-row"><span class="gtag">Sandbox</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- GTA V -->
+      <div class="game-card" data-tags="openworld story action multiplayer realistic long">
+        <div class="game-img-wrap">
+          <img src="images/Grand_Theft_Auto_V.png" alt="GTA V" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🚗</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">GTA V</div>
+          <div class="game-tags-row"><span class="gtag">Open World</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- HOGWARTS LEGACY -->
+      <div class="game-card" data-tags="story openworld fantasy graphics adventure long">
+        <div class="game-img-wrap">
+          <img src="images/Hogwarts_Legacy_(обкладинка).jpeg" alt="Hogwarts Legacy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🧙‍♀️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Hogwarts Legacy</div>
+          <div class="game-tags-row"><span class="gtag">Action RPG</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- BALDUR'S GATE 3 -->
+      <div class="game-card" data-tags="story strategy fantasy long adventure graphics multiplayer">
+        <div class="game-img-wrap">
+          <img src="images/Обкладинка_відеогри_Baldur's_Gate_III.png" alt="Baldur's Gate 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🎲</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Baldur's Gate 3</div>
+          <div class="game-tags-row"><span class="gtag">RPG</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- HADES -->
+      <div class="game-card" data-tags="action combat fantasy story medium casual">
+        <div class="game-img-wrap">
+          <img src="images/Hades_cover_art.jpg" alt="Hades" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🔱</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Hades</div>
+          <div class="game-tags-row"><span class="gtag">Roguelite</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- HOLLOW KNIGHT -->
+      <div class="game-card" data-tags="action combat fantasy story medium long adventure">
+        <div class="game-img-wrap">
+          <img src="images/Hollow_Knight_2026_cover_art.jpg" alt="Hollow Knight" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🦋</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Hollow Knight</div>
+          <div class="game-tags-row"><span class="gtag">Metroidvania</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- STARDEW VALLEY -->
+      <div class="game-card" data-tags="story casual openworld medium long multiplayer">
+        <div class="game-img-wrap">
+          <img src="images/Logo_of_Stardew_Valley.png" alt="Stardew Valley" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🌾</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Stardew Valley</div>
+          <div class="game-tags-row"><span class="gtag">Simulation</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- VALORANT -->
+      <div class="game-card" data-tags="competitive multiplayer action modern medium">
+        <div class="game-img-wrap">
+          <img src="images/valorant-logo-png_seeklogo-379976.png" alt="Valorant" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🔫</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Valorant</div>
+          <div class="game-tags-row"><span class="gtag">Tactical FPS</span><span class="gtag">PC</span></div>
+        </div>
+      </div>
+
+      <!-- APEX LEGENDS -->
+      <div class="game-card" data-tags="competitive multiplayer action medium casual">
+        <div class="game-img-wrap">
+          <img src="images/Обложка_Apex_Legends.jpg" alt="Apex Legends" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🦅</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Apex Legends</div>
+          <div class="game-tags-row"><span class="gtag">Battle Royale</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- DEAD SPACE -->
+      <div class="game-card" data-tags="story action horror graphics medium long">
+        <div class="game-img-wrap">
+          <img src="images/Dead_Space_Box_Art.jpg" alt="Dead Space" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">👾</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Dead Space</div>
+          <div class="game-tags-row"><span class="gtag">Horror</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- RESIDENT EVIL 4 -->
+      <div class="game-card" data-tags="action story adventure graphics medium long horror">
+        <div class="game-img-wrap">
+          <img src="images/Resident_evil_4_boxart.jpg" alt="Resident Evil 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🧟</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Resident Evil 4</div>
+          <div class="game-tags-row"><span class="gtag">Action Horror</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- DETROIT BECOME HUMAN -->
+      <div class="game-card" data-tags="story adventure graphics long realistic">
+        <div class="game-img-wrap">
+          <img src="images/Detroit_Become_Human.jpg" alt="Detroit: Become Human" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🤖</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Detroit: Become Human</div>
+          <div class="game-tags-row"><span class="gtag">Narrative</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- DISCO ELYSIUM -->
+      <div class="game-card" data-tags="story adventure strategy medium long">
+        <div class="game-img-wrap">
+          <img src="images/250px-Disco_Elysium_Poster.jpeg" alt="Disco Elysium" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🕵️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Disco Elysium</div>
+          <div class="game-tags-row"><span class="gtag">RPG</span><span class="gtag">PS / PC</span></div>
+        </div>
+      </div>
+
+      <!-- IT TAKES TWO -->
+      <div class="game-card" data-tags="story adventure multiplayer casual medium long">
+        <div class="game-img-wrap">
+          <img src="images/It_Takes_Two_cover_art.png" alt="It Takes Two" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🤝</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">It Takes Two</div>
+          <div class="game-tags-row"><span class="gtag">Co-op</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- EA SPORTS FC 25 -->
+      <div class="game-card" data-tags="competitive multiplayer modern medium casual">
+        <div class="game-img-wrap">
+          <img src="images/f3c135f8ebdc50b782c6f5f02b27130b499e22847f05aee6.avif" alt="EA Sports FC 25" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">⚽</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">EA Sports FC 25</div>
+          <div class="game-tags-row"><span class="gtag">Sports</span><span class="gtag">All Platforms</span></div>
+        </div>
+      </div>
+
+      <!-- SEKIRO -->
+      <div class="game-card" data-tags="action combat fantasy long graphics story">
+        <div class="game-img-wrap">
+          <img src="images/250px-Обкладинка_відеогри_Sekiro_Shadows_Die_Twice.jpg" alt="Sekiro: Shadows Die Twice" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🗡️</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Sekiro: Shadows Die Twice</div>
+          <div class="game-tags-row"><span class="gtag">Souls-like</span><span class="gtag">PS / Xbox / PC</span></div>
+        </div>
+      </div>
+
+      <!-- MASS EFFECT -->
+      <div class="game-card" data-tags="story adventure openworld graphics long realistic">
+        <div class="game-img-wrap">
+          <img src="images/xK2b8gY5A5oyYlc1pnUUVEm5.jfif" alt="Mass Effect Legendary Edition" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🚀</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">Mass Effect Legendary</div>
+          <div class="game-tags-row"><span class="gtag">RPG</span><span class="gtag">PS / Xbox / PC</span></div>
+        </div>
+      </div>
+
+      <!-- A PLAGUE TALE REQUIEM -->
+      <div class="game-card" data-tags="story adventure postapoc graphics long">
+        <div class="game-img-wrap">
+          <img src="images/PlagueTale1_1200x1600-98f9fd41d86634c1f82e4b5cbfc4e83f.jfif" alt="A Plague Tale: Requiem" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="game-img-placeholder" style="display:none">🐀</div>
+          <div class="game-overlay"><a href="index.html" class="game-find-btn">Find Similar</a></div>
+        </div>
+        <div class="game-info">
+          <div class="game-name">A Plague Tale: Requiem</div>
+          <div class="game-tags-row"><span class="gtag">Action-Adventure</span><span class="gtag">PS / Xbox / PC</span></div>
+        </div>
+      </div>
+
+    </div><!-- end games-grid -->
+
+    <div class="games-cta">
+      <p>Not sure which game is right for you?</p>
+      <a href="index.html" class="btn-primary" style="display:inline-block;text-decoration:none;font-size:0.9rem;padding:0.9rem 2.5rem;">
+        ⚡ Find My Game
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <h3>GameHelper</h3>
+      <p>The site is designed to help users choose video games based on their interests. The user chooses the genre, game format, and their preferences, and the site offers suitable options.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Social media</h3>
+      <a href="https://instagram.com/vlad_revenok" target="_blank">📸 Instagram</a>
+      <a href="https://twitter.com/@revenok_vlad" target="_blank">🐦 Twitter / X</a>
+      <a href="https://tiktok.com/@vlad.revenok" target="_blank">🎵 TikTok</a>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Vlad Revenok</p>
+      <p>0951275524</p>
+      <a href="mailto:revenokvlad@gmail.com">revenokvlad@gmail.com</a>
+    </div>
+    <div class="footer-bottom">© 2026 GameHelper. All rights reserved</div>
+  </footer>
+</div>
+
+<script src="all-games.js"></script>
+</body>
+</html>
